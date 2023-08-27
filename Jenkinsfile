@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'ARGUMENTS', description: 'Script arguments', defaultValue: 'arg1 arg2 arg3')
+        string(name: 'ARGUMENTS', description: 'Script arguments', defaultValue: '/var/jenkins_home/workspace/pipline_with_args/README.md /var/jenkins_home/workspace/pipline_with_args/host_print.sh ')
     }
 
     stages {
@@ -26,7 +26,5 @@ pipeline {
                 }
             }
         }
-
-        // Other stages
     }
 }
