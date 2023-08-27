@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     parameters {
-        string(name: 'ARGUMENTS', description: 'Script arguments', defaultValue: 'file1.txt file2.txt')
+        string(name: 'ARGUMENTS', description: 'Script arguments', defaultValue: 'README.md host_print.sh')
     }
     
     stages {
